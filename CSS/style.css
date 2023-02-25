@@ -1,0 +1,339 @@
+* {
+  --radius: 40px;
+  --transition: 0.3s;
+  --white-color: white;
+  --blue-color: #5C9CE5;
+  --Light-color: #E4F1FF;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  margin: 0rem auto;
+  border-radius: var(--radius);
+  background-color: var(--blue-color);
+}
+
+/* ---------------------------------------------------------- */
+.left-section {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: var(--blue-color);
+}
+
+.left-section .city,
+.left-section .today,
+.left-section .temp-value,
+.left-section .head-section {
+  padding: 0 2rem;
+}
+
+.left-section .plus span {
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: var(--blue-color);
+  background-color: var(--white-color);
+}
+
+.left-section .transform span {
+  width: 10px;
+  height: 10px;
+  opacity: 50%;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: var(--radius);
+  background-color: var(--white-color);
+  transition: var(--transition);
+}
+
+.left-section .transform .active {
+  width: 30px;
+  opacity: 100%;
+  transition: var(--transition) 0.2s;
+}
+
+.left-section .temp-toggle {
+  gap: 10px;
+  display: flex;
+}
+
+
+.left-section .temp-toggle span {
+  color: var(--white-color);
+}
+
+.left-section .temp-toggle .toggle {
+  cursor: pointer;
+  font-size: 30px;
+  user-select: none;
+  transition: var(--transition);
+}
+
+.left-section .city p span,
+.left-section .today p span {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.left-section .today-date {
+  font-size: 18px !important;
+}
+
+.left-section .city p,
+.left-section .today p {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  color: var(--white-color);
+}
+
+.left-section .temp-value {
+  gap: 40px;
+  padding-top: 1rem;
+}
+
+.left-section .temp-value h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+
+.left-section .temp-value .arrow {
+  opacity: 50%;
+  cursor: pointer;
+  font-size: 3rem;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+
+.left-section .temp-value .arrow:hover {
+  opacity: 100%;
+}
+
+/* ---------------------------------------------------------- */
+.right-section {
+  padding: 1rem 2rem;
+  background-color: #E4F1FF;
+  border-radius: var(--radius);
+}
+
+.right-section .head-section .img-dots span {
+  cursor: pointer;
+}
+
+.right-section .head-section img {
+  width: 40px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.right-section .up-coming {
+  user-select: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  background-color: var(--white-color);
+}
+
+.right-section .up-coming p {
+  padding: 0rem 0.5rem;
+}
+
+.right-section .up-coming .Upcoming {
+  font-weight: 700;
+}
+
+.right-section .up-coming .precipitation {
+  color: #b4b2b2;
+}
+
+.right-section .up-coming .precipitation,
+.right-section .up-coming .next {
+  cursor: pointer;
+  background-color: #F1F1F1;
+}
+
+.right-section .up-coming .next {
+  color: black;
+}
+
+.right-section .up-coming .statistics {
+  z-index: 1;
+  position: relative;
+}
+
+.right-section .up-coming .statistics::after {
+  left: 0;
+  bottom: 22%;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background-color: var(--blue-color);
+  clip-path: polygon(31% 85%, 14% 92%, 4% 93%, 4% 100%, 62% 100%, 0% 100%, 96% 100%, 96% 88%, 83% 84%, 70% 91%, 62% 91%, 44% 81%);
+}
+
+.right-section .up-coming .statistics div {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-section .up-coming .statistics .line {
+  width: 1PX;
+  height: 100px;
+  background-color: black;
+}
+
+.right-section .up-coming .statistics .precntage {
+  padding: 0.5rem 0;
+}
+
+.more-detils {
+  padding: 1rem 1rem;
+}
+
+.detils>div {
+  width: 270px;
+  color: black;
+  user-select: none;
+  border-radius: 30px;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--white-color);
+}
+
+.detils div .title {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detils div .title .icon {
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+
+}
+
+.detils div .bars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detils div .bars div span:nth-child(1) {
+  color: gray;
+  font-size: 12px;
+}
+
+.detils div .bars div {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.detils div .bars div .blue {
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  display: block;
+  border-radius: 24px;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.detils div .bars div .light {
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px;
+  color: var(--white-color);
+  background-color: var(--Light-color) !important;
+}
+
+.detils div .bars div .light::after {
+  top: 0;
+  left: 0;
+  width: 40%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: var(--blue-color) !important;
+}
+
+.detils div h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px auto 10px;
+}
+
+.detils div h2 sub,
+.detils div h2 span {
+  font-weight: 300;
+}
+
+.detils div .bars div .complete,
+.detils div .bars div .incomplete {
+  width: 30px;
+  height: 10px;
+  border-radius: 24px;
+}
+
+.detils div .bars div .complete {
+  background-color: var(--blue-color);
+}
+
+.detils div .bars div .incomplete {
+  background-color: var(--Light-color);
+}
+
+.detils div .precipitation div .complete,
+.detils div .precipitation div .incomplete {
+  width: 20px;
+  height: 10px;
+  border-radius: 24px;
+}
+
+.detils div .precipitation div .complete {
+  background-color: var(--blue-color);
+}
+
+.detils div .precipitation div .incomplete {
+  background-color: var(--Light-color);
+}
+
+.long-width {
+  width: 95%;
+  height: 10px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 24px;
+  background-color: var(--Light-color);
+}
+
+.long-width::after {
+  top: 0;
+  left: 0;
+  width: 70%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  border-radius: 24px;
+  background-color: var(--blue-color);
+}

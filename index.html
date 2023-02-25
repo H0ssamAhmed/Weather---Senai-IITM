@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tab icon -->
+    <link rel="shortcut icon" href="img/weather-icon.svg">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <!-- Google Icons -->
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <!-- Style Css File -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="left-section col-3 p-0">
+                <div class="holder">
+                    <div class="head-section row align-items-center pt-4">
+                        <div class="plus col-4">
+                            <span class="material-icons-outlined">add</span>
+                        </div>
+                        <div class="transform col-4">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="temp-toggle col-4">
+                            <span class="temp-c"><sup>O</sup>C</span>
+                            <span class="material-icons-outlined toggle">toggle_off</span>
+                            <span class="temp-f"><sup>O</sup>F</span>
+                        </div>
+                    </div>
+                    <div class="city row justify-content-between align-items-center pt-4">
+                        <p class="city-name col-8">
+                            <span class="material-icons-outlined near-me">near_me</span>New York, USA
+                        </p>
+                        <p class="city-time col-4">
+                            <span class="material-icons-outlined">light_mode</span>
+                            <span>07:19</span>
+                        </p>
+                    </div>
+                    <div class="today row justify-content-between align-items-center">
+                        <p class="today-date col-8">Today 28 Sept</p>
+                        <p class="today-time col-4">
+                            <span class="material-icons-outlined">light_mode</span>
+                            <span>19:32</span>
+                        </p>
+                    </div>
+                    <div class="temp-value pt- d-flex justify-content-center align-items-center">
+                        <span class="material-icons-outlined arrow">chevron_left</span>
+                        <h1><span>27</span><sup>o</sup></h1>
+                        <span class="material-icons-outlined arrow">chevron_right</span>
+                    </div>
+                    <div class="sunny-day d-flex align-items-center justify-content-center gap-1 fs-3 text-white">
+                        <span class="material-icons-outlined">light_mode</span>
+                        <span>Sunny</span>
+                    </div>
+                </div>
+                <div class="img-holder">
+                    <img src="img/NewYour icon.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="right-section col-9">
+                <div class="head-section pt-3 row">
+                    <div class="text col-10">
+                        <h4>Welcome back Isabella!</h4>
+                        <p>Check out today's weather information</p>
+                    </div>
+                    <div class="img-dots col-2 d-flex justify-content-evenly align-items-center pb-4">
+                        <span class="material-icons-outlined">more_horiz</span>
+                        <img src="img/young-lady.jpg" alt="">
+                    </div>
+                </div>
+                <div class="up-coming">
+                    <div class="upcoming-head d-flex justify-content-between">
+                        <p class="Upcoming">Upcoming hours</p>
+                        <div class="d-flex gap-3">
+                            <p class="precipitation d-flex align-items-center">Rain precipitation
+                                <span class="material-icons-outlined">keyboard_arrow_down </span>
+                            </p>
+                            <p class="next   d-flex align-items-center">Next days
+                                <span class="material-icons-outlined">chevron_right</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="statistics row justify-content-between pt-4">
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>Now</span>
+                            <span class="material-icons-outlined">light_mode</span>
+                            <span class="deg">27<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">23%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>11:00</span>
+                            <span class="material-icons-outlined">light_mode</span>
+                            <span class="deg">28<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">29%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>12:00</span>
+                            <span class="material-icons-outlined">cloud</span>
+                            <span class="deg">28<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">58%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>13:00</span>
+                            <span class="material-icons-outlined">cloud</span>
+                            <span class="deg">29<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">75%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>14:00</span>
+                            <span class="material-icons-outlined">light_mode</span>
+                            <span class="deg">30<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">33%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>15:00</span>
+                            <span class="material-icons-outlined">cloud</span>
+                            <span class="deg">30<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">20%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>16:00</span>
+                            <span class="material-icons-outlined">cloud</span>
+                            <span class="deg">29<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">73%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="col-1">
+                            <span>17:00</span>
+                            <span class="material-icons-outlined">light_mode</span>
+                            <span class="deg">27<sup>o</sup></span>
+                            <span class="line"></span>
+                            <span class="precntage">49%</span>
+                        </div>
+                        <!-- ------------------------------------- -->
+                    </div>
+
+                </div>
+                <h2 class="more-detils">More detils of today's weather</h2>
+                <div class="detils row justify-content-center justify-content-lg-evenly" style="gap:20px;">
+                    <!-- ------------------------------------------------------------ -->
+                    <div class="col-3">
+                        <div class="title">
+                            <span class="head">Humidity</span>
+                            <span class="material-icons-outlined icon">water_drop</span>
+                        </div>
+                        <h2>82% <sub>bad</sub></h2>
+                        <div class="bars humidity">
+                            <div>
+                                <span>good</span>
+                                <span class="blue"></span>
+                            </div>
+                            <div>
+                                <span>normal</span>
+                                <span class="blue"></span>
+                            </div>
+                            <div>
+                                <span>bad</span>
+                                <span class="light"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------ -->
+                    <div class="col-3">
+                        <div class="title">
+                            <span class="head">Wind</span>
+                            <span class="material-icons-outlined icon">air</span>
+                        </div>
+                        <h2>8 km/h</h2>
+                        <div class="bars wind">
+                            <div>
+                                <span>0</span>
+                                <span class="complete"></span>
+                            </div>
+                            <div>
+                                <span>5</span>
+                                <span class="complete"></span>
+                            </div>
+                            <div>
+                                <span>10</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>30</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>40</span>
+                                <span class="incomplete"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------ -->
+                    <div class="col-3">
+                        <div class="title">
+                            <span class="head">Precipitation</span>
+                            <span class="material-icons-outlined icon">thunderstorm</span>
+                        </div>
+                        <h2>1.4 cm</h2>
+                        <div class="bars precipitation">
+                            <div>
+                                <span>0</span>
+                                <span class="complete"></span>
+                            </div>
+                            <div>
+                                <span>10</span>
+                                <span class="complete"></span>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>30</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>40</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>50</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>60</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>70</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>80</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>90</span>
+                                <span class="incomplete"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------ -->
+                    <div class="col-3">
+                        <div class="title">
+                            <span class="head">UV index</span>
+                            <span class="material-icons-outlined icon">light_mode</span>
+                        </div>
+                        <h2>4 <span>medium</span></h2>
+                        <div class="bars UV-index">
+                            <div>
+                                <span>0-2</span>
+                                <span class="complete"></span>
+                            </div>
+                            <div>
+                                <span>3-5</span>
+                                <span class="complete"></span>
+                            </div>
+                            <div>
+                                <span>6-7</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>8-18</span>
+                                <span class="incomplete"></span>
+                            </div>
+                            <div>
+                                <span>11+</span>
+                                <span class="incomplete"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------ -->
+                    <div class="col-3">
+                        <div class="title">
+                            <span class="head">Feels like</span>
+                            <span class="material-icons-outlined icon">thermostat</span>
+                        </div>
+                        <h2>30<sup>o</sup></h2>
+                        <div class="Feel">
+                            <div class="bars">
+                                <span>0<sup>O</sup></span>
+                                <span>25<sup>O</sup></span>
+                                <span>50<sup>O</sup></span>
+                            </div>
+                            <span class="long-width d-block"></span>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------ -->
+                    <div class="col-3">
+                        <div class="title">
+                            <span class="head">Chance of rain</span>
+                            <span class="material-icons-outlined icon">umbrella</span>
+                        </div>
+                        <h2>42%</h2>
+                        <div class="chance">
+                            <div class="bars">
+                                <span>0%</span>
+                                <span>25%</span>
+                                <span>50%</span>
+                                <span>75%</span>
+                                <span>100%</span>
+                            </div>
+                            <span class="long-width d-block"></span>
+                        </div>
+                        <!-- ------------------------------------------------------------ -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
